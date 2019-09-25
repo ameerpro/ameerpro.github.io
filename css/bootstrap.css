@@ -577,6 +577,11 @@ mark,
   color: #337ab7;
 }
 
+.text-white {
+  color: #fff;
+  border-color: #fff;
+}
+
 a.text-primary:hover,
 a.text-primary:focus {
   color: #286090;
