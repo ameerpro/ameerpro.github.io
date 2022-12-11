@@ -1,442 +1,326 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/icon.png" />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Proxy | Minimalist Template</title>
 
-        <title>Ameer Hamza | Portfolio</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
+  <script defer src="script/script.js"></script>
+</head>
 
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <!-- <div class="profile__border">
-                        <div class="profile__perfil">
-                            
-                            <img src="assets/img/pic.jpeg" alt="">
-                        </div>
-                    </div> -->
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="" data-version-number="3.0" />
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--1">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--2">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--3">Reviews</a>
+        </li>
+        <li class="nav__item">
+          <h2>hamza.io@hotmail.com</h2>
+        </li>
+      </ul>
+    </nav>
 
-                    <h2 class="profile__name">Ameer Hamza</h2>
-                    <h3 class="profile__profession">Software Engineer | Android | MERN | Java | Kotlin | NodeJS </h3>
+    <div class="header__title">
+      <!-- <h1 onclick="alert('HTML alert')"> -->
+      <h1>
+        Hey, my name is
+        <!-- Green highlight effect -->
+        <span class="highlight">Hamza</span>
+        <br>I'm a
+        <span class="highlight">Full Stack Mobile</span>
+        Developer
+      </h1>
+      <h4>Software Engineer @ Edkasa 🚀 | Android | MEAN | Kotlin | NodeJS - Building Full Stack Mobile Solutions</h4>
+      <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+      <img src="img/stuffs.jpg" class="header__img" alt="Minimalist items" />
+    </div>
+  </header>
 
-                    <ul class="profile__social">
-                        <!--<a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        --->
-                        <a href="https://www.linkedin.com/in/ameerpro/" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/hmz9" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </ul>
-                </div>
+  <section class="section" id="section--1">
+    <div class="section__title">
+      <h2 class="section__description">About Me</h2>
+      <h3 class="section__header">
+        Technical Introduction
+      </h3>
+    </div>
 
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">5+</h3>
-                        <p class="profile__info-description">
-                            Years of <br> work
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">12</h3>
-                        <p class="profile__info-description">
-                            Completed <br> projects
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">5</h3>
-                        <p class="profile__info-description">Satisfied <br> customers</p>
-                    </div>
-                </div>
+    <div class="operations">
+      <div class="operations__tab-container">
+        <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+          <span>01</span>Mobile
+        </button>
+        <button class="btn operations__tab operations__tab--2" data-tab="2">
+          <span>02</span>Backend
+        </button>
+        <button class="btn operations__tab operations__tab--3" data-tab="3">
+          <span>03</span>Leadership
+        </button>
+      </div>
+      <div class="operations__content operations__content--1 operations__content--active">
+        <div class="operations__icon operations__icon--1">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-upload"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Mobile Development
+        </h5>
+        <p>
+          I've been working as Android Developer for 5 years. Skilled in Kotlin, Java, MVVM, Mobile DevOps.
+          <br>
+            <br>&nbsp;&nbsp;&nbsp;- Built & managed apps that scaled upto users with 300K+ installs and 20K DAUs.
+            <br>&nbsp;&nbsp;&nbsp;- Implemented TDD for new projects. Wrote unit tests with 80% code coverage.
+            <br>&nbsp;&nbsp;&nbsp;- Implemented CICD flow for internal, alpha, beta and production release cycles.
+            <br>&nbsp;&nbsp;&nbsp;- Improved crash free user session from 92% to 99.2% by constantly analyzing data from Crashlytics.
+          <br>I am looking for challenges in backend as currently I am learning MERN.
+        </p>
+      </div>
 
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a download="" href="assets/pdf/hamza_resume.pdf" class="button">
-                        Download CV <i class="ri-download-line"></i>
-                    </a>
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-home"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Backend Development - MEAN (Mongo Express Android Node)
+        </h5>
+        <p>
+          I started working as a Backend Developer since 1 year. Skilled in NodeJS, Express, MVC, MongoDB, Postgres.
+          <br>
+            <br>&nbsp;&nbsp;&nbsp;- Created projects with tdd and clean atchitecture.
+            <br>&nbsp;&nbsp;&nbsp;- Currently working on a full stack project where i developed the backend
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and now implementing it on an Android App.
+            <br>&nbsp;&nbsp;&nbsp;- Learning and working on AWS (Serverless)
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* S3
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* CloudFront
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Lambda
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* API Gateway
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* DynamoDB
+            <br>My Full Stack journey is unusual but i prefer learning mobile for client side as its more close to my heart and i love working on mobile.
+        </p>
+      </div>
+      <div class="operations__content operations__content--3">
+        <div class="operations__icon operations__icon--3">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-user-x"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Leadership Skills
+        </h5>
+        <p>
+          I managed a team of 4 while working at LOGICON and this was an experience of a lifetime.
+          <br>
+          <br>&nbsp;&nbsp;&nbsp;- Did code reviews and weekly learning sessions(share new learnings).
+          <br>&nbsp;&nbsp;&nbsp;- Translated complex functional and technical requirements into detailed tasks.
+          <br>&nbsp;&nbsp;&nbsp;- Prioritized tasks assigned to team based on business goals communicated by management.
+          <br>&nbsp;&nbsp;&nbsp;- Built an effective team by helping in recruitment of talented high-performance developers, and conducting effective performance reviews.
+        </p>
+      </div>
+    </div>
+  </section>
 
-                    <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
+  <section class="section" id="section--2">
+    <div class="section__title">
+      <h2 class="section__description">Projects</h2>
+      <h3 class="section__header">
+        Featured Projects. Please contact me for more.
+      </h3>
+    </div>
 
-                        <a href="mailto:hamza.io@hotmail.com" target="_blank" class="button button__small button__gray">
-                            <i class="ri-mail-line"></i>
-                        </a>
-                        
-                            <a href="https://api.whatsapp.com/send?phone=+923204771612&text=Hello, Hamza lets talk!" target="_blank" class="button button__small button__gray">
-                            <i class="ri-whatsapp-line"></i>
-                        </a>
-                        <!-- Insert your brand name or profile -->
-                    
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
+    <div class="features">
+      <img src="img/edkasa.png" data-src="img/edkasa.png" alt="Computer" class="features__img lazy-img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/edkasa.svg#icon-monitor"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Edkasa</h5>
+        <p>
+          Edkasa is an Ed-tech company and i created its exam prep app for students in matriculation and intermediate all over Pakistan. This app offers:
+          <br>&nbsp;&nbsp;&nbsp;- Interactive Live classes
+          <br>&nbsp;&nbsp;&nbsp;- One on One Live Sessions
+          <br>&nbsp;&nbsp;&nbsp;- Video Lectures and notes
+          <br>&nbsp;&nbsp;&nbsp;- Entry test and practical prep
+          <br>&nbsp;&nbsp;&nbsp;- 25% free content and rest is premium. 
+          <br><a href="https://play.google.com/store/apps/details?id=com.edkasa.android" target="_blank">Check on Playstore</a>
+        </p>
+      </div>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Projects
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        Skills
-                    </button>
-                </ul>
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/amplifyd.svg#icon-trending-up"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Amplifyd</h5>
+        <p>
+          Amplifyd is a data driven AI powered data driven platform that connects brands and influencers strategically. 
+          The app aims to fulfill every marketer need of influencers. 
+          With it's constantly updating directory, 
+          Amplifyd enables users to connect with their desired brands or influencers. 
+          <br><a href="https://play.google.com/store/apps/details?id=com.logicon.amplifyd" target="_blank">Check on Playstore</a>
+        </p>
+      </div>
+      <img src="img/amplifyd.png" data-src="img/amplifyd.png" alt="Plant" class="features__img lazy-img" />
 
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
+      <img src="img/lively.png" data-src="img/lively.png" alt="Credit card" class="features__img lazy-img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-credit-card"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Live.ly</h5>
+        <p>
+          Live.ly helps you take your streaming experience to a next level by helping
+          you stream to different platform(facebook, youtube, twitch) simultaneously 
+          for free with the help of Real time streaming protocol. <a href="https://twitter.com/realHamzaBhatti/status/1532835489367175172" target="_blank">Check Demo</a>
+        </p>
+      </div>
 
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-credit-card"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Heypay</h5>
+        <p>
+          While learning flutter i created this beautiful App with a concept of a Fintech app
+          that is your digital card manager as well. <a href="https://twitter.com/realHamzaBhatti/status/1535856866995101696" target="_blank">Check Demo</a>
+        </p>
+      </div>
+      <img src="img/heypay.png" data-src="img/heypay.png" alt="Credit card" class="features__img lazy-img" />
 
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/iuSy5hw.png" alt="" class="projects__img">
+    </div>
+  </section>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Edtech Android App</span>
-                                    <h3 class="projects__title">Edkasa</h3>
-                                    <a href="https://play.google.com/store/apps/details?id=com.edkasa.android" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+  <section class="section" id="section--3">
+    <div class="section__title section__title--testimonials">
+      <h2 class="section__description">Peer Reviews</h2>
+      <h3 class="section__header">
+        Some of my peer reviews
+      </h3>
+    </div>
 
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="https://i.imgur.com/a1GTw3Z.png" alt="" class="projects__img">
+    <div class="slider">
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">Team Member at Edkasa</h5>
+          <blockquote class="testimonial__text">
+            We started the project from scratch and I really enjoyed working with him. 
+            <br>He always has strong opinion about things be it Android or Backend. 
+            <br>He is one of the best programmer I came across in my career. 
+            <br>He is a fun guy to work with and yeah he is a good story teller.
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="img/inayat.jpeg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Inayat Ullah</h6>
+            <p class="testimonial__location">Sr. Backend Developer at AlgoCoder</p>
+          </address>
+        </div>
+      </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Influencer Marketing Marketplace(Android App)</span>
-                                    <h3 class="projects__title">Amplifyd</h3>
-                                    <a href="https://play.google.com/store/apps/details?id=com.logicon.amplifyd" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">Wroked together on Amplifyd</h5>
+          <blockquote class="testimonial__text">
+            Working with Ameer Hamza for over one year has been no less than enlightening. 
+            His enthusiasm and dedication to creating new projects are contagious for everyone working with him. 
+            His upbeat attitude in times of stress makes work and tasks easier for him and his team and he gets the work done in no time. 
+            His leadership skills are impeccable. No to mention his analytical and problem-solving skills which are irreproachable.
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="img/mishaal.jpeg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Mishaal Saqlain</h6>
+            <p class="testimonial__location">Assistant Manager Corporate Communications</p>
+          </address>
+        </div>
+      </div>
 
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/VL6WLH2.png" alt="" class="projects__img">
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">Studied together in university</h5>
+          <blockquote class="testimonial__text">
+            Ameer is one of my first colleagues and one thing I learned from him is being passionate about your work. 
+            He's a great developer and has a thirst to learn new technologies by time to cope up with the changes being made in the industry. 
+            Wish him a successful career.
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="img/ansar.jpeg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Ansar Nawaz</h6>
+            <p class="testimonial__location">Senior ASE at Oracle</p>
+          </address>
+        </div>
+      </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Flutter Fintech Card Manager Concept</span>
-                                    <h3 class="projects__title">HeyPay</h3>
-                                    <a href="https://twitter.com/realHamzaBhatti/status/1535856866995101696" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+      <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+      <div class="dots"></div>
+    </div>
+  </section>
 
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/wFEYBOy.png" alt="" class="projects__img">
+  <section class="section section--sign-up">
+    <div class="section__title">
+      <h3 class="section__header">
+        Click <a href="mailto:hamza.io@hotmail.com" style="color:white;" target="_blank">here</a> to send me an email or send me a <a href="https://api.whatsapp.com/send?phone=+923204771612&text=Hello, Hamza lets talk!" style="color:white;" target="_blank">Whatsapp</a>
+      </h3>
+    </div>
+  </section>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Android Live Streaming App to multiple platforms at once</span>
-                                    <h3 class="projects__title">Live.ly</h3>
-                                    <a href="https://twitter.com/realHamzaBhatti/status/1532835489367175172" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+  <footer class="footer">
+    <ul class="footer__nav">
+      <li class="footer__item">
+        <a class="footer__link" href="#section--1">About</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#section--2">Projects</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#section--3">Reviews</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="mailto:hamza.io@hotmail.com">hamza.io@hotmail.com</a>
+      </li>
+  </footer>
 
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/JQHRX0P.png" alt="" class="projects__img">
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Will reply within <br />
+      <span class="highlight">a day</span>
+    </h2>
+    <form class="modal__form">
+      <label>First Name</label>
+      <input type="text" />
+      <label>Last Name</label>
+      <input type="text" />
+      <label>Email Address</label>
+      <input type="email" />
+      <button class="btn">Next step &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+</body>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Android App built with Jetpack Compose</span>
-                                    <h3 class="projects__title">Meditation</h3>
-                                    <a href="https://twitter.com/realHamzaBhatti/status/1534542599003979776" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/FRmlnj4.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">iOS ecommerce concept built with SwiftUI</span>
-                                    <h3 class="projects__title">Rugbysta</h3>
-                                    <a href="https://twitter.com/realHamzaBhatti/status/1511286162484350983" target="_blank" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="https://i.imgur.com/Q8h4vGD.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Flutter travelling App UI</span>
-                                    <h3 class="projects__title">Travelish</h3>
-                                    <a href="https://github.com/hmz9/travel_ish" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">Android Developer</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Java</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Kotlin</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Jetpack</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Retrofit</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Coroutines</h3>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">REST</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">CI/CD</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Dagger Hilt</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Firebase</h3>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <!--- 
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                       <div>
-                                            <h3 class="skills__name">React</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                -->
-                            </div>
-                        </div>
-
-                        <div class="skills__area">
-                            <h3 class="skills__title">Backend Developer</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <!---
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">PHP</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                    -->
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">NodeJs</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MySQL</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MongoDB</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Express</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">REST</h3>
-                                        </div>
-                                    </div>
-
-                                    <!---
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Firebase</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Python</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Node Js</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                 -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; Ameer Hamza. All rigths reserved
-            </span>
-        </footer>
-
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
